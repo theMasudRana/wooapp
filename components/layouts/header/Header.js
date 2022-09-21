@@ -54,12 +54,9 @@ function Header({ header }) {
 									key={menuItem?.ID}
 									href={menuItem?.url ?? "/"}
 								>
-									<a
-										className="block mt-4 lg:inline-block lg:mt-0 hover:text-brand-royal-blue duration-500 mr-10"
-										dangerouslySetInnerHTML={{
-											__html: menuItem.title,
-										}}
-									/>
+									<a className="block mt-4 lg:inline-block lg:mt-0 hover:text-brand-royal-blue duration-500 mr-10">
+										{menuItem.title}
+									</a>
 								</Link>
 						  ))
 						: null}
